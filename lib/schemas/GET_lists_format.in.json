@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "properties": {
+        "list": {
+            "type": "string"
+        },
+        "date": {
+            "type": "string"
+        },
+        "isbn": {
+            "type": "string"
+        },
+        "rank": {
+            "type": "integer"
+        },
+        "offset": {
+            "type": "integer",
+            "multipleOf": 20
+        },
+        "weeks_on_list": {
+            "type": "integer"
+        },
+        "bestsellers_date": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "published_date": {
+            "type": "string"
+        },
+        "rank_last_week": {
+            "type": "integer"
+        },
+        "sort_order": {
+            "type": "string",
+            "enum": [
+                "ASC",
+                "DESC"
+            ]
+        }
+    }
+}

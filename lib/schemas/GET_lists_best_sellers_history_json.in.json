@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "author": {
+            "type": "string"
+        },
+        "contributor": {
+            "type": "string"
+        },
+        "isbn": {
+            "type": "string"
+        },
+        "price": {
+            "type": "string"
+        },
+        "publisher": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "age_group": {
+            "type": "string"
+        }
+    }
+}

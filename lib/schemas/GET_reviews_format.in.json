@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "isbn": {
+            "type": "integer"
+        },
+        "title": {
+            "type": "string"
+        },
+        "author": {
+            "type": "string"
+        },
+        "api_key": {
+            "type": "string"
+        }
+    }
+}

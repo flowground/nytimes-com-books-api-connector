@@ -1,0 +1,140 @@
+{
+    "title": "Books",
+    "description": "The Books API provides information about book reviews and The New York Times bestsellers lists.",
+    "docsUrl": "http://developer.nytimes.com/",
+    "url": "https://api.apis.guru/v2/specs/nytimes.com/books_api/3.0.0/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://api.nytimes.com/svc/books/v3",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            },
+            "api-key": {
+                "label": "api-key (api-key)",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "GET_lists_format": {
+            "main": "./lib/actions/GET_lists_format.js",
+            "title": "Best Seller List",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/GET_lists_format.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "GET_lists_best_sellers_history_json": {
+            "main": "./lib/actions/GET_lists_best_sellers_history_json.js",
+            "title": "Best Seller History List",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/GET_lists_best_sellers_history_json.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "GET_lists_names_format": {
+            "main": "./lib/actions/GET_lists_names_format.js",
+            "title": "Best Seller List Names",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/GET_lists_names_format.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "GET_lists_overview_format": {
+            "main": "./lib/actions/GET_lists_overview_format.js",
+            "title": "Best Seller List Overview",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/GET_lists_overview_format.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "GET_lists_date_list_json": {
+            "main": "./lib/actions/GET_lists_date_list_json.js",
+            "title": "Best Seller List by Date",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/GET_lists_date_list_json.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "GET_reviews_format": {
+            "main": "./lib/actions/GET_reviews_format.js",
+            "title": "Reviews",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/GET_reviews_format.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}
