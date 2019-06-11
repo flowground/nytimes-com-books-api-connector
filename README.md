@@ -5,7 +5,7 @@
 A generated **flow**ground connector for the Books API (version 3.0.0).
 
 Generated from: https://api.apis.guru/v2/specs/nytimes.com/books_api/3.0.0/swagger.json<br/>
-Generated at: 2019-05-07T17:43:19+03:00
+Generated at: 2019-06-11T18:14:41+03:00
 
 ## API Description
 

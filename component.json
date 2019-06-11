@@ -1,5 +1,5 @@
 {
-    "title": "Books",
+    "title": "Books (books_api)",
     "description": "The Books API provides information about book reviews and The New York Times bestsellers lists.",
     "docsUrl": "http://developer.nytimes.com/",
     "url": "https://api.apis.guru/v2/specs/nytimes.com/books_api/3.0.0/swagger.json",
@@ -19,7 +19,7 @@
                 "label": "Custom Server URL",
                 "viewClass": "TextFieldView"
             },
-            "api-key": {
+            "auth_api-key": {
                 "label": "api-key (api-key)",
                 "viewClass": "TextFieldView"
             }
